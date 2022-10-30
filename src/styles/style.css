@@ -15,6 +15,18 @@ html {
   font: 400 16px/1.6em "Open Sans", sans-serif;
 }
 
+.c-main {
+  color: var(--main);
+}
+
+.c-white {
+  color: var(--white);
+}
+
+.bg-main {
+  background: var(--main);
+}
+
 h1,
 h2,
 h3,
@@ -37,10 +49,91 @@ h3 {
   font-size: 34px;
 }
 
-.section {
+header::before {
+  position: absolute;
+  z-index: -1;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.d-flex {
   display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.f-center {
   align-items: center;
   justify-content: center;
-  width: 1100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+.section-content {
+  width: 1110px;
   margin: 100px 0;
+}
+
+.main-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  z-index: -1;
+
+  height: 525px;
+}
+
+.double-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.double-column > * {
+  flex: 0 1 calc((100% / 2) - 15px);
+}
+
+header h1 {
+  margin-bottom: 185px;
+}
+
+.btn-d {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 24px;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-d:hover {
+  background: #ea7600;
 }
