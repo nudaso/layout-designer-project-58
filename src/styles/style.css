@@ -23,12 +23,20 @@ html {
   color: var(--white);
 }
 
+.bg-white {
+  background: var(--white);
+}
+
 .bg-main {
   background: var(--main);
 }
 
 .bg-light {
   background: var(--light);
+}
+
+.bg-primary-dark {
+  background: #42413c;
 }
 
 h1,
@@ -101,9 +109,12 @@ body * {
   padding: 0;
 }
 
-.section {
+.w-1110 {
   width: 1110px;
-  margin: 100px 0;
+}
+
+.p-100-0 {
+  padding: 100px 0;
 }
 
 .main-img {
@@ -149,5 +160,16 @@ header h1 {
 }
 
 .video {
+  position: relative;
+  z-index: 2;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.top-100 {
+  top: 100px;
 }
