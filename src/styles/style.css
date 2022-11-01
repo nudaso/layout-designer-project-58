@@ -30,9 +30,9 @@ body > * {
 }
 
 body * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1,
@@ -41,9 +41,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   font-family: Neucha, cursive;
   line-height: 1.2em;
-  font-weight: 400;
 }
 
 h1 {
@@ -216,12 +216,15 @@ header h1 {
 
 .card {
   display: block;
-  text-decoration: none;
+
   padding: 24px;
+
+  text-decoration: none;
 }
 
 .number {
   padding-bottom: 40px;
+
   font-size: 64px;
   line-height: 1;
 }
