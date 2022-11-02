@@ -54,6 +54,8 @@ h6 {
   font-weight: 400;
   font-family: Neucha, cursive;
   line-height: 1.2em;
+
+  color: var(--main);
 }
 
 .line-1-2 {
