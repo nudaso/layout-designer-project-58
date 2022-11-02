@@ -87,8 +87,16 @@ a {
   color: var(--op-dark);
 }
 
+.c-op-white {
+  color: var(--op-white);
+}
+
 .c-white {
   color: var(--white);
+}
+
+.c-brown {
+  color: var(--brown);
 }
 
 .bg-white {
@@ -105,6 +113,10 @@ a {
 
 .bg-primary-dark {
   background: #42413c;
+}
+
+.bg-brown {
+  background: var(--brown);
 }
 
 .back::before {
@@ -333,4 +345,16 @@ header h1 {
 
 .image-shadow {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.bg-brown .header-descr {
+  background: var(--white);
+}
+
+.bg-brown * {
+  color: var(--white);
+}
+
+.bg-brown .c-brown {
+  color: var(--brown);
 }
