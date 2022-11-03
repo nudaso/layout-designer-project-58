@@ -287,11 +287,6 @@ header h1 {
   text-decoration: none;
 }
 
-.btn-d:hover,
-.btn-form:hover {
-  background: #ea7600;
-}
-
 .text-center {
   text-align: center;
 }
@@ -341,10 +336,6 @@ header h1 {
 
 .card-container:hover {
   background: var(--main);
-}
-
-.card-container:hover * {
-  color: var(--white);
 }
 
 .number {
@@ -411,7 +402,13 @@ header h1 {
 
 .btn-form {
   width: 70px;
+
   cursor: pointer;
+}
+
+.btn-d:hover,
+.btn-form:hover {
+  background: #ea7600;
 }
 
 .btn-form::before {
@@ -443,4 +440,8 @@ header h1 {
 
 .developer a {
   color: var(--blue);
+}
+
+.card-container:hover * {
+  color: var(--white);
 }
